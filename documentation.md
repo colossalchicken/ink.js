@@ -1,4 +1,4 @@
->### [Code](https://github.com/coolprofessor/ink.js/blob/main/ink.min.js)   &nbsp;&nbsp;  |  &nbsp;&nbsp;    Editor &nbsp;&nbsp;  | &nbsp; &nbsp; [Github](https://github.com/coolprofessor/ink.js#code-------editor------documentation)
+> [Code](https://github.com/coolprofessor/ink.js/blob/main/ink.min.js)   &nbsp;&nbsp;  |  &nbsp;&nbsp;    Editor &nbsp;&nbsp;  | &nbsp; &nbsp; [Github](https://github.com/coolprofessor/ink.js#code-------editor------documentation)
 
 
 ## Documentation
