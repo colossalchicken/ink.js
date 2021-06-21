@@ -1,1 +1,23 @@
-<script>window.location="demo.html"</script>
+    <script src="https://coolprofessor.github.io/ink.js/ink.min.js" > </script>
+    
+    <script>
+    
+	    layerList = [ "Banana" ];
+	    
+	    Banana = {
+		    type: "image",
+		    source: "https://coolprofessor.github.io/ink.js/demo/banana.jpg",
+		    width: 25,
+		    x: 0,
+		    y:0,
+		    selectable: false,
+	    }
+	    function forever(){
+
+		    Banana.x = mouse.x-20;
+		    Banana.y = mouse.y-20;
+	    }
+	    
+	    mouse.cursor= "none";
+	    
+    </script>
