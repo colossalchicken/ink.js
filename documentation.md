@@ -10,15 +10,9 @@ To begin using ink, create a  HTML file, and add a script like so:
 
     <script src="https://coolprofessor.github.io/ink.js/ink.min.js" > </script>
     
-<br>
-
-There are a lot of good HTML editors. Here is a list of some simple ones:
-
-- [Tryit Editor v3.6 (w3schools.com)](https://www.w3schools.com/html/tryit.asp?filename=tryhtml_default)
-- [Tynker](https://www.tynker.com/)
 
 ## Basic code
-The program is set up with characters, called entities. They are set up in objects, that hold information about them. Here is an Example::
+The program is set up with characters, called entities. They are set up in objects, that hold information about them. Here is an Example:
 
     cow = {
 	    type: "image",
@@ -27,23 +21,25 @@ The program is set up with characters, called entities. They are set up in objec
 	    y: 0,
 	    selectable: false
     }
+
 <br>
+
 The entities are listed in an array called "layerList". This list shows in what order entities overlap.
 
-    layerList = ["cow"]
+    layerList = [ "cow" , cat ]
     
-> Note: The characters are listed in string format, so you can easily edit the array with variables.
+> Note: The characters can be listed as a string or variable. If a variable is provided, it will autlomatically be changed to a string.
 
 <br>
-To make the program interactive, there is a loop called forever, that repeats a set of code infinitely.
+
+To loop code, use the forever function that repeats a set of code infinitely.
 
     function forever(){
 	    
     }
     
->Note: to change the speed of the loop and rendering, change the `frameDelay` variable (milliseconds) 
-
 <br>
+
 The mouse and keyboard have objects that show their information as well.
 
 
@@ -66,12 +62,12 @@ The mouse and keyboard have objects that show their information as well.
 	    pressed: function(){},
     }
     
-    var page = {
-		selectable: true,
-		editable: false,
-		//execute it, don't edit it
-		reset: null
-	};
+    page = {
+	    selectable: true,
+	    editable: false,
+	    reset: null,
+	    loaded: true
+    }
 <br>
 <br>
 
@@ -104,8 +100,6 @@ These are the properties that you can add to an entity.
 
 - Example: `x:0, y: 23`
 
- >Note:  If  both x and y are null, the entity will align to the center.
-
  <br>
 
 **selectable**
@@ -131,7 +125,7 @@ These are the properties that you can add to an entity.
 
 - Input: Boolean
 
-- Example: `visible: true`
+- Example: `visible: false`
 
 <br>
 
@@ -152,7 +146,6 @@ These are the properties that you can add to an entity.
 - Example: `background: "blue"`
 
 <br>
-
 
 **Rotation**
 
@@ -193,3 +186,14 @@ These are the properties that you can add to an entity.
 - Input: number, function
 
 - Example: `repeat(10,function(){ alert("hello") })`
+
+<br>
+
+**wait**
+
+- This function pauses the entire webpage.
+
+- Input: number(milleseconds)
+
+- Example: `wait(2000)`
+
