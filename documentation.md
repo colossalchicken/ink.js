@@ -1,6 +1,3 @@
-> [Code](https://github.com/coolprofessor/ink.js/blob/main/ink.min.js)   &nbsp;&nbsp;  |  &nbsp;&nbsp;    Editor &nbsp;&nbsp;  | &nbsp; &nbsp; [Github](https://github.com/coolprofessor/ink.js#code-------editor------documentation)
-
-
 ## Documentation
 This is the documentation for the Ink.js Program.
 The list of features is always growing, so the syntax may change over time.
