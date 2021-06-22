@@ -14,7 +14,7 @@ To add a character, create an object with its properties.
 	};
 
       
-Next, add the name to the layer list to tell the computer to render it.
+Next, add it's name to the layer list to tell the computer to render it.
 
      layerList = [ Banana ];
 
