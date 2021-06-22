@@ -1,5 +1,3 @@
-Ink is a simple module for creating online games and apps. Instead of using the normal canvas element, it uses real HTML.
-
 To use ink, add this script to your HTML:
 
      <script src="ink.js" > </script>
