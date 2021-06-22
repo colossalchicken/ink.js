@@ -1,6 +1,7 @@
 To use ink, add this script to your HTML:
 
      <script src="ink.js" > </script>
+
 <br> 
 <hr>
 <br>
