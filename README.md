@@ -27,4 +27,4 @@ To add functionality, use the forever function to repeat the code indefinitely.
      
 output:
 
-> [<img src="https://coolprofessor.github.io/ink.js/demo/banana.gif" width="150"/>](https://coolprofessor.github.io/ink.js/demo/)
+> [<img draggable="false" src="https://coolprofessor.github.io/ink.js/demo/banana.gif" width="150"/>](https://coolprofessor.github.io/ink.js/demo/)
