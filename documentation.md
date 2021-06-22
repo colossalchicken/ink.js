@@ -1,6 +1,5 @@
 ## Documentation
-This is the documentation for the Ink.js Program.
-The list of features is always growing, so the syntax may change over time.
+This is the documentation for the Ink.js module.
 
 ## Setup 
 To begin using ink, create a  HTML file, and add a script like so:
