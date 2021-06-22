@@ -1,16 +1,18 @@
 To use ink, add this script to your HTML:
 
      <script src="ink.js" > </script>
-     
+
+<br>
+
 To add a character, create an object with its properties.
 
-	    Banana = {
-		    type: "image",
-		    source: "banana.jpg",
-		    width: 25,
-		    x: 0,
-		    y:0,
-	    }
+    Banana = {
+        type: "image",
+	source: "banana.jpg",
+	width: 25,
+	x: 0,
+        y:0,
+    };
       
 Next, add the name to the layer list to tell the computer to render it.
 
@@ -18,11 +20,11 @@ Next, add the name to the layer list to tell the computer to render it.
 
 To add functionality, use the forever function to repeat the code indefinitely.
 
-     function forever(){
-        Banana.x = mouse.x;
+    function forever(){
+     	Banana.x = mouse.x;
         Banana.y = mouse.y;
-     }
+    }
      
 output:
 
-> [<img src="https://coolprofessor.github.io/ink.js/demo/banana.gif" width="150"/>](https://coolprofessor.github.io/ink.js/demo/)
+> [<img src="https://coolprofessor.github.io/ink.js/demo/banana.gif" width="200"/>](https://coolprofessor.github.io/ink.js/demo/)
