@@ -1,9 +1,7 @@
 To use ink, add this script to your HTML:
 
      <script src="ink.js" > </script>
-
-<br>
-
+<hr>
 To add a character, create an object with its properties.
 
 	Banana = {
