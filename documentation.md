@@ -24,7 +24,7 @@ The entities are listed in an array called "layerList". This list shows in what 
 
     layerList = [ "cow" , cat ]
     
-> Note: The characters can be listed as a string or variable. If a variable is provided, it will autlomatically be changed to a string.
+> Note: The entities can be listed as a string or variable. If a variable is provided, it will automatically be changed to a string.
 
 <br>
 
