@@ -6,7 +6,7 @@ To use ink, add this script to your HTML:
 To add a character, create an object with its properties.
 
     Banana = {
-    		type: "image",
+    	type: "image",
 		source: "banana.jpg",
  		width: 25,
  		x: 0,
