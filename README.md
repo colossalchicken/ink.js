@@ -1,6 +1,6 @@
 To use ink, add this script to your HTML:
 
-     <script src="ink.js.org/ink.min.js" > </script>
+     <script src="https://ink.js.org/ink.min.js" > </script>
 
 <hr><br>
 To add a character, create an object with its properties.
