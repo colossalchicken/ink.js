@@ -27,7 +27,7 @@ To add functionality, use the forever function to repeat the code indefinitely.
      
 output:
 
-> <a href="https://coolprofessor.github.io/ink.js/demo/"><img style="visibility: hidden" src="https://coolprofessor.github.io/ink.js/demo/banana.gif" width="150" /></a><embed style="position: relative; left: -150px; overflow: hidden;" width=150 src="https://coolprofessor.github.io./ink.js/demo" />
+> <a href="https://coolprofessor.github.io/ink.js/demo/"><img style="visibility: hidden" src="https://coolprofessor.github.io/ink.js/demo/banana.gif" width="150" /></a><embed style="position: relative; left: -150px; overflow: hidden;" width=150 src="https://ink.js.org/demo" />
 
 
 A full description of this can be found in the [wiki](https://github.com/coolprofessor/ink.js/wiki#welcome-to-the-inkjs-wiki).
