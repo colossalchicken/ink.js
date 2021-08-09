@@ -15,8 +15,10 @@ To add a character, create an object with its properties.
 
 
 <br>
+
 Ink.js only notices an object if it has a `type` or `contents` property. 
 To change how the charcters overlap, use `layerList`.
+
 <br>
 
 To add functionality, use the forever function to repeat the code indefinitely.
