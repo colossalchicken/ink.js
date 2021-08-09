@@ -6,7 +6,7 @@ To use ink, add this script to your HTML:
 To add a character, create an object with its properties.
 
     Banana = {
-    	type: "image",
+    		type: "image",
 		source: "https://ink.js.org/demo/banana.jpg",
  		width: 25,
  		x: 0,
@@ -14,9 +14,9 @@ To add a character, create an object with its properties.
     };
 
       
-Next, add it's name to the layer list to tell the computer to render it.
+Ink.js only notices an object if it has a `type` or `contents` property. 
+To change how the charcters overlap, use `layerList`.
 
-    layerList = [ Banana ];
 
 To add functionality, use the forever function to repeat the code indefinitely.
 
