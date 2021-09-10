@@ -1,3 +1,4 @@
+<meta name="msvalidate.01" content="1E04C121560E17B33DCB875A4D390338" />
 To use ink, add this script to your HTML:
 
      <script src="https://ink.js.org/ink.min.js" > </script>
