@@ -1,4 +1,3 @@
-<meta name="msvalidate.01" content="1E04C121560E17B33DCB875A4D390338" />
 To use ink, add this script to your HTML:
 
      <script src="https://ink.js.org/ink.min.js" > </script>
@@ -34,3 +33,6 @@ output:
 > <a href="https://coolprofessor.github.io/ink.js/demo/"><img src="https://ink.js.org/demo/banana.gif" width="150" /></a>
 
 A full description of this can be found in the [wiki](https://github.com/coolprofessor/ink.js/wiki#welcome-to-the-inkjs-wiki).
+
+<!-- clarity -->
+<script>(function(c,l,a,r,i,t,y){c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i+"?ref=bwt";y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y)})(window,document,"clarity","script","8dof1t1865");</script>
