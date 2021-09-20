@@ -1,3 +1,4 @@
+Ink.js is an object-oriented tool for creating online apps and games. It is simple, and does not require any installation.
 To use ink, add this script to your HTML:
 
      <script src="https://ink.js.org/ink.min.js" > </script>
@@ -16,8 +17,8 @@ To add a character, create an object with its properties.
 
 <br>
 
-Ink.js only notices an object if it has a `type` or `contents` property. 
-To change how the charcters overlap, use `layerList`.
+> Ink.js only notices an object if it has a `type` or `contents` property. 
+> To change how the characters overlap, use `layerList`.
 
 <br>
 
