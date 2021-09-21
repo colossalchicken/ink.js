@@ -36,4 +36,4 @@ output:
 
 A full description of this can be found in the [wiki](https://github.com/coolprofessor/ink.js/wiki#welcome-to-the-inkjs-wiki).
 <br>
-> This tool is in no way related to [ink.sapo.pt](https://ink.sapo.pt).
+> This site is in no way related to [ink.sapo.pt](https://ink.sapo.pt).
