@@ -1,5 +1,5 @@
 Ink.js is an object-oriented tool for creating online apps and games. It is simple, and does not require any installation.
-<br>
+<br><br>
 To use ink, add this script to your HTML:
 
      <script src="https://ink.js.org/ink.min.js" > </script>
