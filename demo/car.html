@@ -1,0 +1,13 @@
+ <script src="https://ink.js.org/ink.min.js" > </script>
+<script>
+car = {
+	width: 200, height: 100, rotate: -90,
+	x: window.innerWidth/2-100, y: window.innerHeight-200,
+	type: 'image',
+    source: 'https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fclipground.com%2Fimages%2Fbirds-eye-view-clipart-5.jpg&f=1&nofb=1',
+}
+mouse.cursor = 'none'
+forever = ()=>{
+	car.x = mouse.x-100
+}
+</script>
