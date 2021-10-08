@@ -35,5 +35,5 @@ output:
 > <a href="https://coolprofessor.github.io/ink.js/demo/"><img src="https://ink.js.org/demo/banana.gif" width="150" /></a>
 
 A full description of this can be found in the [wiki](https://github.com/coolprofessor/ink.js/wiki#welcome-to-the-inkjs-wiki).
-<br>
-> This site is in no way related to [ink.sapo.pt](https://ink.sapo.pt).
+<br><br>
+> This repository is in no way related to [ink.sapo.pt](https://ink.sapo.pt).
