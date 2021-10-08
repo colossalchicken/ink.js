@@ -1,0 +1,43 @@
+<script src="ink.js"> </script> 
+<button id='runButton' style='background: white; width: 25%; position: absolute; left: 0px; top: 0px; z-index: 10; ' onclick="runScript()" >Run</button><button id='resetButton' style='background: white; position: absolute; left: 0px; top: 0px; z-index: 10; width: 25% ' onclick="window.location.reload()" >Reset</button>
+<title>Editor</title>
+<style>
+::selection {
+
+  background: #3dcefe;
+  color: white
+  
+}
+</style>
+<element contenteditable=true spellcheck='false' id='codeBox' style='cursor: text; overflow-y : scroll; color: white; background: black; resize: none; position: absolute; left: 0px; top: 20px; z-index: 10; width: 50%; height: 97%' >
+// you can edit the code here and click run to view changes.<br><br>//set BG color<br>document.documentElement.style.background = 'url(road.gif)'<br><br>car = {<br>&nbsp;&nbsp; &nbsp;width: 200,<br>&nbsp;&nbsp; &nbsp;height: 100,<br>&nbsp;&nbsp; &nbsp;rotate: -90,<br>&nbsp;&nbsp; &nbsp;x: window.innerWidth / 4 - 100,<br>&nbsp;&nbsp; &nbsp;y: window.innerHeight - 200,<br>&nbsp;&nbsp; &nbsp;type: 'image',<br>&nbsp;&nbsp; &nbsp;source: 'car.png',<br>}<br><br>car2 = {<br>&nbsp;&nbsp; &nbsp;width: 200,<br>&nbsp;&nbsp; &nbsp;height: 100,<br>&nbsp;&nbsp; &nbsp;rotate: 90,<br>&nbsp;&nbsp; &nbsp;x: window.innerWidth / 2 - 100,<br>&nbsp;&nbsp; &nbsp;y: -200,<br>&nbsp;&nbsp; &nbsp;type: 'image',<br>&nbsp;&nbsp; &nbsp;source: 'car.png',<br>}<br><br>car3 = {<br>&nbsp;&nbsp; &nbsp;width: 200,<br>&nbsp;&nbsp; &nbsp;height: 100,<br>&nbsp;&nbsp; &nbsp;rotate: 90,<br>&nbsp;&nbsp; &nbsp;x: window.innerWidth / 4 - 100,<br>&nbsp;&nbsp; &nbsp;y: -200,<br>&nbsp;&nbsp; &nbsp;type: 'image',<br>&nbsp;&nbsp; &nbsp;source: 'car.png',<br>}<br><br>scoreboard = {<br>&nbsp;&nbsp; &nbsp;x: 20,<br>&nbsp;&nbsp; &nbsp;y: 10,<br>&nbsp;&nbsp; &nbsp;contents: "move your mouse to play",<br>color: 'white'<br>}<br><br>mouse.cursor = 'none'<br><br>//increases over time<br>score = 0<br><br>forever = () =&gt;<br>{<br>&nbsp;&nbsp; &nbsp;if (car2.y &lt; page.height + 200)<br>&nbsp;&nbsp; &nbsp;{<br>&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; car2.y += 10 * score * .01<br>&nbsp;&nbsp; &nbsp;}<br>&nbsp;&nbsp; &nbsp;else<br>&nbsp;&nbsp; &nbsp;{<br>&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; car2.y = -100<br>&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; car2.x = random(0, page.width/2 - 300)<br>&nbsp;&nbsp; &nbsp;}<br>&nbsp;&nbsp; &nbsp;if (car3.y &lt; page.height + 200)<br>&nbsp;&nbsp; &nbsp;{<br>&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; car3.y += 10 * score * .02<br>&nbsp;&nbsp; &nbsp;}<br>&nbsp;&nbsp; &nbsp;else<br>&nbsp;&nbsp; &nbsp;{<br>&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; car3.y = -100<br>&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; car3.x = random(100, page.width/2 - 300)<br>&nbsp;&nbsp; &nbsp;}<br>&nbsp;&nbsp; &nbsp;if (score != 0)<br>&nbsp;&nbsp; &nbsp;{<br>&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; score += .05<br>&nbsp;&nbsp; &nbsp;}<br>&nbsp;&nbsp; &nbsp;if (score != 0)<br>&nbsp;&nbsp; &nbsp;{<br>&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; scoreboard.contents = 'score: ' + (Math.round(score * 100) - 10000)<br>&nbsp;&nbsp; &nbsp;}<br>&nbsp;&nbsp; &nbsp;if (car.x &gt; car2.x - 100 &amp;&amp; car.x &lt; car2.x + 100 &amp;&amp; car2.y &gt; page.height - 400 &amp;&amp; car2.y &lt; page.height - 200)<br>&nbsp;&nbsp; &nbsp;{<br>&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; score = 100<br>document.documentElement.style.background = 'url(road.png)'<br>&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; forever = () =&gt;<br>&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; {}<br>&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; mouse.moved = () =&gt;<br>&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; {}<br>&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; mouse.cursor = ''<br>&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; scoreboard.contents = 'score: ' + (Math.round(score * 100) - 10000) + "&lt;h1&gt; You crashed!&lt;/h1&gt;&lt;br&gt;&lt;button onclick='window.location.reload()'&gt;restart&lt;/button&lt;/h1&gt;"<br>&nbsp;&nbsp; &nbsp;}<br>&nbsp;&nbsp; &nbsp;if (car.x &gt; car3.x - 100 &amp;&amp; car.x &lt; car3.x + 100 &amp;&amp; car3.y &gt; page.height - 400 &amp;&amp; car3.y &lt; page.height - 200)<br>&nbsp;&nbsp; &nbsp;{<br>&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; score = 100<br>document.documentElement.style.background = 'url(road.png)'<br>&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; forever = () =&gt;<br>&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; {}<br>&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; mouse.moved = () =&gt;<br>&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; {}<br>&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; mouse.cursor = ''<br>&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; scoreboard.contents = 'score: ' + (Math.round(score * 100) - 10000) + "&lt;h1&gt; You crashed!&lt;/h1&gt;&lt;br&gt;&lt;button onclick='window.location.reload()'&gt;restart&lt;/button&lt;/h1&gt;"<br>&nbsp;&nbsp; &nbsp;}<br>}<br><br>mouse.moved = () =&gt;<br>{<br>&nbsp;&nbsp; &nbsp;setTimeout(() =&gt;<br>&nbsp;&nbsp; &nbsp;{<br>&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; car.x = mouse.x - 100<br>&nbsp;&nbsp; &nbsp;}, 10);<br>&nbsp;&nbsp; &nbsp;if (score == 0)<br>&nbsp;&nbsp; &nbsp;{<br>&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; score = 100<br>&nbsp;&nbsp; &nbsp;}<br>}<br><br>
+</element>
+<script>
+window.onbeforeunload = function(){
+  return "Are you sure you want to loose everything forever (a very long time)?";
+}
+function runScript(){
+forever = ()=>{}
+mouse.moved = ()=>{}
+key.pressed = ()=>{}
+mouse.cursor = ""
+layerList = []
+eval(element('codeBox').innerText)
+        for (var name in this) {
+            if (name !== 'styleMedia' && name !== 'event' && name !== "onmozfullscreenchange" && name !== "onmozfullscreenerror" && eval(name) !== null) {
+                if (eval(name).character !== false && typeof eval(name) === 'object' && !!eval(name + ".contents") || !!eval(name + ".type") && element('codeBox').innerText.includes(name) ) {
+	   if(name != 'scoreboard' || element('codeBox').innerText.includes('scoreboard') ){
+                    layerList.push(name)
+                    }
+                }
+            }
+        }
+}
+document.documentElement.style.overflow = 'hidden'
+setInterval(()=>{document.getElementById('codeBox').style.left  = window.innerWidth/2 + 'px'; document.getElementById('runButton').style.left  = window.innerWidth/2 + 'px'; document.getElementById('resetButton').style.left  = window.innerWidth/1.33 + 'px';})
+
+runScript();
+</script>
+<body>
+
+</body>
