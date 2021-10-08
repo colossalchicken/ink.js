@@ -1,102 +1,113 @@
-<script src="https://ink.js.org/ink.min.js" > </script>
-<script>
+<script src="https://ink.js.org/ink.min.js"></script><script>
+ // you can edit the code here and click run to view changes.
+
+//set BG color
+document.documentElement.style.background = 'url(road.gif)'
+document.documentElement.style.overflow = 'hidden'
 car = {
-	width: 200,
-	height: 100,
-	rotate: -90,
-	x: window.innerWidth / 2 - 100,
-	y: window.innerHeight - 200,
-	type: 'image',
-	source: 'https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fclipground.com%2Fimages%2Fbirds-eye-view-clipart-5.jpg&f=1&nofb=1',
+    width: 200,
+    height: 100,
+    rotate: -90,
+    x: window.innerWidth / 2 - 100,
+    y: window.innerHeight - 200,
+    type: 'image',
+    source: 'car.png',
 }
+
+car2 = {
+    width: 200,
+    height: 100,
+    rotate: 90,
+    x: window.innerWidth  - 100,
+    y: -200,
+    type: 'image',
+    source: 'car.png',
+}
+
+car3 = {
+    width: 200,
+    height: 100,
+    rotate: 90,
+    x: window.innerWidth - 100,
+    y: -200,
+    type: 'image',
+    source: 'car.png',
+}
+
+scoreboard = {
+    x: 20,
+    y: 10,
+    contents: "move your mouse to play",
+color: 'white'
+}
+
 mouse.cursor = 'none'
+
+//increases over time
 score = 0
+
 forever = () =>
 {
-	if (car2.y < page.height + 200)
-	{
-		car2.y += 10 * score * .01
-	}
-	else
-	{
-		car2.y = -100
-		car2.x = random(0, page.width - 100)
-	}
-	if (car3.y < page.height + 200)
-	{
-		car3.y += 10 * score * .02
-	}
-	else
-	{
-		car3.y = -100
-		car3.x = random(0, page.width - 100)
-	}
-	if (score != 0)
-	{
-		score += .05
-	}
-	if (score != 0)
-	{
-		scoreboard.contents = 'score: ' + (Math.round(score * 100) - 10000)
-	}
-	if (car.x > car2.x - 100 && car.x < car2.x + 100 && car2.y > page.height - 400 && car2.y < page.height - 200)
-	{
-		score = 100
-		forever = () =>
-		{}
-		mouse.moved = () =>
-		{}
-		mouse.cursor = ''
-		scoreboard.contents = 'score: ' + (Math.round(score * 100) - 10000) + "<h1> You crashed!</h1><br><button onclick='window.location.reload()'>restart</button</h1>"
-	}
-	if (car.x > car3.x - 100 && car.x < car3.x + 100 && car3.y > page.height - 400 && car3.y < page.height - 200)
-	{
-		score = 100
-		forever = () =>
-		{}
-		mouse.moved = () =>
-		{}
-		mouse.cursor = ''
-		scoreboard.contents = 'score: ' + (Math.round(score * 100) - 10000) + "<h1> You crashed!</h1><br><button onclick='window.location.reload()'>restart</button</h1>"
-	}
+    if (car2.y < page.height + 200)
+    {
+        car2.y += 10 * score * .01
+    }
+    else
+    {
+        car2.y = -100
+        car2.x = random(50, page.width)
+    }
+    if (car3.y < page.height + 200)
+    {
+        car3.y += 10 * score * .02
+    }
+    else
+    {
+        car3.y = -100
+        car3.x = random(50, page.width)
+    }
+    if (score != 0)
+    {
+        score += .05
+    }
+    if (score != 0)
+    {
+        scoreboard.contents = 'score: ' + (Math.round(score * 100) - 10000)
+    }
+    if (car.x > car2.x - 100 && car.x < car2.x + 100 && car2.y > page.height - 400 && car2.y < page.height - 200)
+    {
+        score = 100
+document.documentElement.style.background = 'url(road.png)'
+        forever = () =>
+        {}
+        mouse.moved = () =>
+        {}
+        mouse.cursor = ''
+        scoreboard.contents = 'score: ' + (Math.round(score * 100) - 10000) + "<h1> You crashed!</h1><br><button onclick='window.location.reload()'>restart</button</h1>"
+    }
+    if (car.x > car3.x - 100 && car.x < car3.x + 100 && car3.y > page.height - 400 && car3.y < page.height - 200)
+    {
+        score = 100
+document.documentElement.style.background = 'url(road.png)'
+        forever = () =>
+        {}
+        mouse.moved = () =>
+        {}
+        mouse.cursor = ''
+        scoreboard.contents = 'score: ' + (Math.round(score * 100) - 10000) + "<h1> You crashed!</h1><br><button onclick='window.location.reload()'>restart</button</h1>"
+    }
 }
 
 mouse.moved = () =>
 {
-	setTimeout(() =>
-	{
-		car.x = mouse.x - 100
-	}, 10);
-	if (score == 0)
-	{
-		score = 100
-	}
-}
-car2 = {
-	width: 200,
-	height: 100,
-	rotate: 90,
-	x: window.innerWidth / 2 - 100,
-	y: -200,
-	type: 'image',
-	source: 'https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fclipground.com%2Fimages%2Fbirds-eye-view-clipart-5.jpg&f=1&nofb=1',
-}
-car3 = {
-	width: 200,
-	height: 100,
-	rotate: 90,
-	x: window.innerWidth / 2 - 100,
-	y: -200,
-	type: 'image',
-	source: 'https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fclipground.com%2Fimages%2Fbirds-eye-view-clipart-5.jpg&f=1&nofb=1',
+    setTimeout(() =>
+    {
+        car.x = mouse.x - 100
+    }, 10);
+    if (score == 0)
+    {
+        score = 100
+    }
 }
 
-scoreboard = {
-	x: 0,
-	y: 10,
-	contents: "move your mouse to play",
-}
-
-document.documentElement.style.background = 'darkgrey'
-document.documentElement.style.overflow = 'hidden'
 </script>
