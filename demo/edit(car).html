@@ -35,7 +35,7 @@ eval(element('codeBox').innerText)
 }
 document.documentElement.style.overflow = 'hidden'
 setInterval(()=>{document.getElementById('codeBox').style.left  = window.innerWidth/2 + 'px'; document.getElementById('runButton').style.left  = window.innerWidth/2 + 'px'; document.getElementById('resetButton').style.left  = window.innerWidth/1.33 + 'px';})
-window.onerror = function(messageOrEvent, source, lineno, colno, error) { alert("error: "  + error) }
+window.onerror = function(messageOrEvent, source, lineno, colno, error) { alert( error) }
 runScript();
 </script>
 <body>
