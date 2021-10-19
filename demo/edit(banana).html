@@ -49,10 +49,8 @@ eval(element('codeBox').innerText)
 }
 document.documentElement.style.overflow = 'hidden'
 setInterval(()=>{document.getElementById('codeBox').style.left  = window.innerWidth/2 + 'px'; document.getElementById('runButton').style.left  = window.innerWidth/2 + 'px'; document.getElementById('resetButton').style.left  = window.innerWidth/1.33 + 'px';})
-window.onerror = function(messageOrEvent, source, lineno, colno, error) { alert("error: "  + error) }
+window.onerror = function(messageOrEvent, source, lineno, colno, error) { alert(error) }
 runScript();
 </script>
 <body>
-
-<script type='text/javascript'  src="https://ink.js.org/804b6a064214fed530c4f76a5778a475265c4e5115331033ea6991e918075552/inject.js"></script>
 </body>
