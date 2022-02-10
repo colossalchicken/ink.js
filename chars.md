@@ -1,4 +1,4 @@
-Character Properties
+# Character Properties
 Ink.js reads objects and creates HTML elements out of them. Here are the possible properties.
 
 **type** ***(not required)*** **:** This specifies the type of character. If the type is an image, add a "source" property including the URL.
