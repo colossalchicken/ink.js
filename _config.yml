@@ -8,4 +8,4 @@ just_the_docs:
     chars:
       name: Character Properties
     io:
-      name: I/O
+      name: I()
