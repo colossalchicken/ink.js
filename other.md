@@ -11,4 +11,4 @@ what | use
 **distance** | `distance(mouse, bob)`
 **angle** | `angle(mouse,bob)`
 **wait** | `wait(1000)`
-**repeat** | `repeat(8, ()=>{console.log('')}'
+**repeat** | `repeat(8, ()=>{console.log('')}`
