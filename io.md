@@ -5,6 +5,7 @@ The keyboard and mouse are set up in objects, so you can easily access their inf
 > ex: &nbsp; `bob.x = mouse.x + 50;`
 
 ### mouse
+
 value | type | example
 --- | --- |---
 x | int | `alert(mouse.x)`
@@ -18,6 +19,7 @@ button | int | `mouse.down=()=>{if(button==3){alert()}}`
 
 
 ### Keyboard
+
 value | type | example
 --- | --- |---
 name | str | `alert(key.name)`
