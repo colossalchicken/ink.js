@@ -1,4 +1,4 @@
-#other features
+# other features
 
 Here are some other things you can do with ink.js
 
