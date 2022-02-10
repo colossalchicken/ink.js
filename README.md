@@ -1,4 +1,4 @@
-Ink.js is an object-oriented tool for creating online apps and games. It is simple, and does not require any installation.
+Ink.js is a tool that thinks outside the box, figuratively and literaly. Insted of using the canvas, ink.js uses HTML elements to render content. It is an object-oriented, simple, and does not require any installation.
 <br><br>
 To use ink, add this script to the top of your HTML:
 
@@ -27,7 +27,7 @@ Banana = {
 To add functionality, use the forever function to repeat the code indefinitely.
 
 ```javascript
-function forever(){
+forever = ()=>{
 	Banana.x = mouse.x;
 	Banana.y = mouse.y;
 }
@@ -35,7 +35,3 @@ function forever(){
 output:
 
 > [![click to open](https://ink.js.org/demo/banana.gif)](https://coolprofessor.github.io/ink.js/demo/)
-
-A full description of this can be found in the [wiki](https://github.com/coolprofessor/ink.js/wiki#welcome-to-the-inkjs-wiki).
-<br><br>
-> This repository is in no way related to [ink.sapo.pt](https://ink.sapo.pt).
