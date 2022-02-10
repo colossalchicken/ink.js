@@ -29,6 +29,7 @@ down | func | `mouse.down = ()=>{ }`
 pressed | func | `if(mouse.pressed){alert()}` &nbsp; &nbsp; &nbsp;  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  &nbsp; &nbsp; &nbsp;
 
 ### page
+
 value | example
  --- | ---
 selectable | `page.selectable = false`
