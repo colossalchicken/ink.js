@@ -27,7 +27,7 @@ Banana = {
 To add functionality, use the forever function to repeat the code indefinitely.
 
 ```javascript
-function forever(){
+function loop(){
 	Banana.x = mouse.x;
 	Banana.y = mouse.y;
 }
