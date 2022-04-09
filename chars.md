@@ -2,7 +2,7 @@
 Ink.js reads objects and creates HTML elements out of them. Here are the possible properties.
 
 **type** ***(not required)*** **:** This specifies the type of character. If the type is an image, add a "source" property including the URL.
-<br>**contents:** This is the html code for the character. Example: `contents: "<p>hi</p>"`
+<br>**html:** This is the html code for the character. Example: `html: "<p>hi</p>"`
 
 name | input |example
 --- | --- | ---
