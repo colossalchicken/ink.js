@@ -19,4 +19,5 @@ visible | bool | `vivsible : false`
 color | str | `color: 'blue'` ***(use CSS)***
 backgorund | str | `background: 'red'` ***(use CSS)***
 rotation | int | `rotate: 90`
+style | obj | `style = { border : "1px solid black"} `
 
