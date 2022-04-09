@@ -16,6 +16,7 @@ down | func | `mouse.down = ()=>{ }`
 pressed | func | `if(mouse.pressed){alert()}`
 cursor | str | `mouse.cursor = 'red'` ***(use CSS)***
 button | int | `mouse.down=()=>{if(button==3){alert()}}`
+menu | bool | `mouse.menu = false`
 
 
 ### Keyboard
