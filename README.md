@@ -1,4 +1,4 @@
-Ink.js is a tool that thinks outside the box, figuratively and literaly. Insted of using the canvas, ink.js uses HTML elements to render content. It is an object-oriented, simple, and does not require any installation.
+Ink.js is a tool that thinks outside the box, figuratively and literaly. Insted of using the canvas, ink.js uses HTML elements to render content. It is object-oriented, simple, and does not require any installation.
 <br><br>
 To use ink, add this script to the top of your HTML:
 
