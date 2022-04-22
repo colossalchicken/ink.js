@@ -34,4 +34,4 @@ loop = ()=>{
 ```
 output:
 
-> [![click to open](https://ink.js.org/demo/banana.gif)](https://coolprofessor.github.io/ink.js/demo/)
+> [![click to open](https://ink.js.org/demo/banana.gif)](https://ink.js.org/demo/)
