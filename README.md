@@ -1,7 +1,7 @@
-| Note:
-| This was a side project when I first started programming
-| It is not really usefull and probably has a lot of bugs
-| But it was fun to make!
+> Note:
+> This was a side project when I first started programming
+> It is not really usefull and probably has a lot of bugs
+> But it was fun to make!
 
 
 Ink.js is an object-oriented tool for creating online apps and games. It is simple, and does not require any installation.
